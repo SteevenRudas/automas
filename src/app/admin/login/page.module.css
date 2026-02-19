@@ -1,0 +1,38 @@
+.page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-medium) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+}
+
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-10) var(--space-10);
+    width: 100%;
+    max-width: 420px;
+    box-shadow: var(--shadow-xl);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-8);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-medium);
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: var(--space-8) var(--space-6);
+    }
+}
